@@ -46,7 +46,7 @@ const challengeGoals = [
   [1.05e13, 4.18e18, 1.02e20],
   [1.0e10, 3.0e10, 2.4e11, Infinity]
 ];
-const challengeCurve = [0, 1, 1.5, 2];
+const challengeCurve = [0, 0.9, 1.45, 1.8];
 let partOP = 0;
 let factorBoostLoop = 0;
 let cardinalLoop = ExpantaNum(0);
