@@ -53,7 +53,7 @@ let cardinalLoop = ExpantaNum(0);
 /* eslint-disable */
 let collapseAnimation = 0;
 /* eslint-enable */
-const iupCosts = [1e5, 1e4, 1e9, 1e17, 2e22, 4e23, 1e19, 2e25, 4e27];
+const iupCosts = [1e5, 1e3, 1e9, 1e17, 2e22, 4e23, 1e19, 2e25, 4e27];
 const dupCosts = [
   5,
   50,
