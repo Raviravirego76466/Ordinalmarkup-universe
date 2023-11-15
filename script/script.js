@@ -163,7 +163,7 @@ const calculate = window.setInterval(() => {
 }, game.msint);
 
 function loop(unadjusted, off = 0) {
-  let ms=unadjusted
+  let ms=unadjusted * ((game.challenge == 6 || game.challenge == 7) && game.dynamic > 0 ? 1 : 1000); // x1000 here! (c6+c7 fix)
   if (game.chal8==1&&game.decrementy<10) {
     ms=50
   }
@@ -173,7 +173,7 @@ function loop(unadjusted, off = 0) {
   if (game.leastBoost === null) game.leastBoost = Infinity;
   if (game.leastBoost === "null") game.leastBoost = Infinity;
   if (typeof game.leastBoost === "undefined") game.leastBoost = Infinity;
-  game.collapseTime += ms / 1000;
+  game.collapseTime += ms / 1000 / 1000; // Not multiplying by 1000
   game.base = calcBase();
   game.lastTick = Date.now();
   game.qolSM.nc8 = get("nonC8Auto").value;
