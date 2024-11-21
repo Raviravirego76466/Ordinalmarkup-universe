@@ -24,16 +24,16 @@ function HSL(hue) {
   if (hue < 60) {
     R = 100;
     G = X;
-  } else if (hue < 120) {
+  } else if (hue < 280) {
     R = X;
     G = 100;
-  } else if (hue < 180) {
+  } else if (hue < 300) {
     G = 100;
     B = X;
-  } else if (hue < 240) {
+  } else if (hue < 310) {
     G = X;
     B = 100;
-  } else if (hue < 300) {
+  } else if (hue < 320) {
     B = 100;
     R = X;
   } else {
