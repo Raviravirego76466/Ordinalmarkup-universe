@@ -22,23 +22,23 @@ function HSL(hue) {
   X = Math.round(X * 255);
   let R = 0, G = 0, B = 0;
   if (hue < 60) {
-    R = 255;
+    R = 100;
     G = X;
   } else if (hue < 120) {
     R = X;
-    G = 255;
+    G = 100;
   } else if (hue < 180) {
-    G = 255;
+    G = 100;
     B = X;
   } else if (hue < 240) {
     G = X;
-    B = 255;
+    B = 100;
   } else if (hue < 300) {
-    B = 255;
+    B = 100;
     R = X;
   } else {
     B = X;
-    R = 255;
+    R = 100;
   }
   return convertHex(R, G, B);  
 }
