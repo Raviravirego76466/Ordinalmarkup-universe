@@ -1,7 +1,7 @@
 "use strict";
 "ab"
 // Yeah, I know it's pretty unorganized at the moment
-let factorMult = 1;
+let factorMult = 10e308;
 let bfactorMult = 1;
 let succAutoMult = 1;
 let limAutoMult = 1;
